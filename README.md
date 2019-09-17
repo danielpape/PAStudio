@@ -1,2 +1,0 @@
-# PAStudio
-Created with CodeSandbox
