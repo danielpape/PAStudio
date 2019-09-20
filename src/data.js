@@ -6,29 +6,35 @@ const colorData = [
     base: "#333333",
     chestPlate: "#333333",
     aquila: "#aaaaaa",
-    pauldren: "#333333",
+    leftPauldren: citadelPaint.AbaddonBlack,
+    rightPauldren: citadelPaint.AbaddonBlack,
     pauldrenBorder: "#aaaaaa",
     belt: "#333",
+    eyes: citadelPaint.MephistonRed,
     chapterName: "Raven Guard"
   },
   {
     id: 1,
     base: citadelPaint.WarpstoneGlow,
     chestPlate: citadelPaint.WarpstoneGlow,
-    aquila: "#BF8C3C",
-    pauldren: "#333333",
-    pauldrenBorder: "#BF8C3C",
+    aquila: citadelPaint.BalthasarGold,
+    leftPauldren: citadelPaint.AbaddonBlack,
+    rightPauldren: citadelPaint.AbaddonBlack,
+    pauldrenBorder: citadelPaint.WarpstoneGlow,
     belt: "#333",
+    eyes: citadelPaint.MephistonRed,
     chapterName: "Salamanders"
   },
   {
     id: 2,
     base: citadelPaint.MephistonRed,
     chestPlate: citadelPaint.MephistonRed,
-    aquila: "#424242",
-    pauldren: "#333333",
+    aquila: citadelPaint.MechanicusStandardGrey,
+    leftPauldren: citadelPaint.MephistonRed,
+    rightPauldren: citadelPaint.MephistonRed,
     pauldrenBorder: "#000000",
     belt: "#333",
+    eyes: citadelPaint.WarpstoneGlow,
     chapterName: "Blood Angels"
   },
   {
@@ -36,9 +42,11 @@ const colorData = [
     base: citadelPaint.AverlandSunset,
     chestPlate: citadelPaint.AverlandSunset,
     aquila: citadelPaint.ScreamerPink,
-    pauldren: citadelPaint.AverlandSunset,
+    leftPauldren: citadelPaint.AverlandSunset,
+    rightPauldren: citadelPaint.AverlandSunset,
     pauldrenBorder: citadelPaint.MephistonRed,
-    belt: "#333",
+    belt: citadelPaint.SkragBrown,
+    eyes: citadelPaint.MephistonRed,
     chapterName: "Imperial Fists"
   },
   {
@@ -46,9 +54,11 @@ const colorData = [
     base: citadelPaint.FenrisianGrey,
     chestPlate: citadelPaint.FenrisianGrey,
     aquila: citadelPaint.BalthasarGold,
-    pauldren: citadelPaint.AverlandSunset,
+    leftPauldren: citadelPaint.AverlandSunset,
+    rightPauldren: citadelPaint.MephistonRed,
     pauldrenBorder: citadelPaint.FenrisianGrey,
     belt: "#333",
+    eyes: citadelPaint.MephistonRed,
     chapterName: "Space Wolves"
   },
   {
@@ -56,9 +66,11 @@ const colorData = [
     base: citadelPaint.WhiteScar,
     chestPlate: citadelPaint.WhiteScar,
     aquila: citadelPaint.EvilSunzScarlet,
-    pauldren: citadelPaint.WhiteScar,
+    leftPauldren: citadelPaint.WhiteScar,
+    rightPauldren: citadelPaint.WhiteScar,
     pauldrenBorder: citadelPaint.EvilSunzScarlet,
     belt: "#333",
+    eyes: citadelPaint.MephistonRed,
     chapterName: "White Scars"
   },
   {
@@ -66,9 +78,11 @@ const colorData = [
     base: citadelPaint.MacraggeBlue,
     chestPlate: citadelPaint.MacraggeBlue,
     aquila: citadelPaint.RetributorArmour,
-    pauldren: citadelPaint.MacraggeBlue,
+    leftPauldren: citadelPaint.MacraggeBlue,
+    rightPauldren: citadelPaint.MacraggeBlue,
     pauldrenBorder: citadelPaint.RetributorArmour,
     belt: "#333",
+    eyes: citadelPaint.MephistonRed,
     chapterName: "Ultramarines"
   },
   {
@@ -76,10 +90,24 @@ const colorData = [
     base: "#333",
     chestPlate: "#333",
     aquila: citadelPaint.Leadbelcher,
-    pauldren: "#333",
+    leftPauldren: "#333",
+    rightPauldren: "#333",
     pauldrenBorder: citadelPaint.Leadbelcher,
     belt: "#333",
+    eyes: citadelPaint.MephistonRed,
     chapterName: "Iron Hands"
+  },
+  {
+    id: 8,
+    base: citadelPaint.CalibanGreen,
+    chestPlate: citadelPaint.CalibanGreen,
+    aquila: citadelPaint.UshabtiBone,
+    leftPauldren: citadelPaint.CalibanGreen,
+    rightPauldren: citadelPaint.CalibanGreen,
+    pauldrenBorder: citadelPaint.CalibanGreen,
+    belt: citadelPaint.SkragBrown,
+    eyes: citadelPaint.MephistonRed,
+    chapterName: "Dark Angels"
   }
 ];
 

@@ -9,7 +9,9 @@ class PaintSwatch extends React.Component {
     const SwatchStyle = {
       width: 16,
       height: 16,
-      backgroundColor: this.props.colour
+      margin: 2,
+      backgroundColor: this.props.colour,
+      display: "inline-block"
     };
 
     return <div style={SwatchStyle} />;
