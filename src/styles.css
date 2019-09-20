@@ -1,5 +1,6 @@
 body {
-  text-align: center;
+  margin: 0;
+  background-color: #f5f5f5;
 }
 
 .App {
@@ -9,9 +10,19 @@ body {
 }
 
 header {
-  text-align: center;
-  font-family: sans-serif;
-  margin: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 12px;
+  color: #333;
+  background-color: white;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 16px;
+  display: inline-block;
+  margin: 8px;
+  letter-spacing: 1px;
 }
 
 .item {
@@ -20,5 +31,17 @@ header {
   transition: box-shadow 0.3s;
   border-radius: 8px;
   margin: 16px 16px 16px 16px;
-  padding-top: 16px;
+  padding: 16px;
+}
+
+.item__ChapterName {
+  margin: -32px 0 8px 0;
+  font-weight: 300;
+  color: #666;
+}
+
+.item__swatch {
+  width: 16px;
+  height: 16px;
+  background-color: #333;
 }

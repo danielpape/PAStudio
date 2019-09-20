@@ -4,7 +4,7 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <h2>Space Marine Chapters</h2>
+        <h1>Power Armour Studio</h1>
       </header>
     );
   }

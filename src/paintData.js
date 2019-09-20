@@ -1,205 +1,194 @@
 const citadelPaint = {
-  averlandSunset: "#FDB825",
-  mephistonRed: "#9A1115",
-  warpstoneGlow: "#1E7331",
-  AbaddonBlackBase: "#000000"
-  /*Averland Sunset	Base	"#FDB825"	,
-Balthasar Gold (Metal)	Base	"#A47552"	,
-Bugmans Glow	Base	#834F44	,
-Caledor Sky	Base	#396E9E	,
-Caliban Green	Base	#00401F	,
-Castellan Green	Base	#314821	
-Celestra Grey	Base	#90A8A8	
-Ceramite White	Base	#FFFFFF	
-Daemonette Hide	Base	#696684	
-Death Guard Green	Base	#848A66	
-Deathworld Forest	Base	#5C6730	
-Dryad Bark	Base	#33312D	
-Incubi Darkness	Base	#0B474A	
-Jokaero Orange	Base	#EE3823	
-Kantor Blue	Base	#002151	
-Khorne Red	Base	#6A0001	
-Leadbelcher (Metal)	Base	#888D8F	
-Macragge Blue	Base	#0D407F	
-Mechanicus Standard Grey	Base	#3D4B4D	
-Mephiston Red	Base	#9A1115	
-Mournfang Brown	Base	#640909	
-Naggaroth Night	Base	#3D3354	
-Rakarth Flesh	Base	#A29E91	
-Ratskin Flesh	Base	#AD6B4C	
-Retributor Armour (Metal)	Base	#C39E81	
-Rhinox Hide	Base	#493435	
-Screamer Pink	Base	#7C1645	
-Screaming Bell (Metal)	Base	#C16F45	
-Steel Legion Drab	Base	#5E5134	
-Stegadon Scale Green	Base	#074863	
-The Fang Grey	Base	#436174	
-Thousand Sons Blue	Base	#18ABCC	
-Waaagh! Flesh	Base	#1F5429	
-Warplock Bronze (Metal)	Base	#927D7B	
-XV-88	Base	#72491E	
-Zandri Dust	Base	#9E915C	
-Administratum Grey	Layer	#949B95	
-Ahriman Blue	Layer	#1F8C9C	
-Alaitoc Blue	Layer	#295788	
-Altdorf Guard Blue	Layer	#1F56A7	
-Auric Armour Gold (Metal)	Layer	#E8BC6D	
-Balor Brown	Layer	#8B5910	
-Baneblade Brown	Layer	#937F6D	
-Bestigor Flesh	Layer	#D38A57	
-Brass Scorpion (Metal)	Layer	#B7885F	
-Cadian Fleshtone	Layer	#C77958	
-Calgar Blue	Layer	#4272B8	
-Dark Reaper	Layer	#3B5150	
-Dawnstone	Layer	#70756E	
-Deathclaw Brown	Layer	#B36853	
-Doombull Brown	Layer	#5D0009	
-Elysian Green	Layer	#748F39	
-Emperors Children	Layer	#B94278	
-Eshin Grey	Layer	#4A4F52	
-Evil Sunz Scarlet	Layer	#C2191F	
-Fenrisian Grey	Layer	#719BB7	
-Fire Dragon Bright	Layer	#F58652	
-Flash Gitz Yellow	Layer	#FFF200	
-Flayed One Flesh	Layer	#F0D9B8	
-Fulgurite Copper (Metal)	Layer	#FCFCDE	
-Gehenna's Gold (Metal)	Layer	#DBA674	
-Genestealer Purple	Layer	#7761AB	
-Gorthor Brown	Layer	#654741	
-Hashut Copper (Metal)	Layer	#B77647	
-Hoeth Blue	Layer	#4C7FB4	
-Ironbreaker (Metal)	Layer	#A1A6A9	
-Kabalite Green	Layer	#038C67	
-Karak Stone	Layer	#BB9662	
-Kislev Flesh	Layer	#D6A875	
-Liberator Gold (Metal)	Layer	#D3B587	
-Loren Forest	Layer	#50702D	
-Lothern Blue	Layer	#34A2CF	
-Moot Green	Layer	#52B244	
-Nurgling Green	Layer	#849C63	
-Ogryn Camo	Layer	#9DA94B	
-Pallid Wych Flesh	Layer	#CDCEBE	
-Pink Horror	Layer	#90305D	
-Runefang Steel (Metal)	Layer	#C3CACE	
-Runelord Brass (Metal)	Layer	#B6A89A	
-Russ Grey	Layer	#547588	
-Screaming Skull	Layer	#D2D4A2	
-Skarsnik Green	Layer	#5F9370	
-Skavenblight Dinge	Layer	#47413B	
-Skrag Brown	Layer	#90490F	
-Skullcrusher Brass (Metal)	Layer	#F1C78E	
-Slaanesh Grey	Layer	#8E8C97	
-Sotek Green	Layer	#0B6974	
-Squig Orange	Layer	#AA4F44	
-Stormhost Silver (Metal)	Layer	#BBC6C9	
-Stormvermin Fur	Layer	#736B65	
-Straken Green	Layer	#628126	
-Sybarite Green	Layer	#30A56C	
-Sycorax Bronze (Metal)	Layer	#CBB394	
-Tallarn Sand	Layer	#A67610	
-Tau Light Ochre	Layer	#BF6E1D	
-Teclis Blue	Layer	#317EC1	
-Temple Guard Blue	Layer	#339A8D	
-Thunderhawk Blue	Layer	#417074	
-Troll Slayer Orange	Layer	#F36D2D	
-Tuskgor Fur	Layer	#883636	
-Ulthuan Grey	Layer	#C7E0D9	
-Ungor Flesh	Layer	#D6A766	
-Ushabti Bone	Layer	#BBBB7F	
-Warboss Green	Layer	#3E805D	
-Warpfiend Grey	Layer	#6B6A74	
-Warpstone Glow	Layer	#1E7331	
-Wazdakka Red	Layer	#8C0A0C	
-White Scar	Layer	#FFFFFF	
-Wild Rider Red	Layer	#EA2F28	
-Xereus Purple	Layer	#471F5F	
-Yriel Yellow	Layer	#FFDA00	
-Zamesi Desert	Layer	#DDA026	
-Agrax Earthshade	Shade	#5A573F	
-Agrax Earthshade (Gloss)	Shade	#5A573F	
-Athonian Camoshade	Shade	#6D8E44	
-Biel-Tan Green	Shade	#1BA169	
-Carroburg Crimson	Shade	#A82A70	
-Casandora Yellow	Shade	#FECE5A	
-Coelia Greenshade	Shade	#0E7F78	
-Drakenhof Nightshade	Shade	#125899	
-Druchii Violet	Shade	#7A468C	
-Fuegan Orange	Shade	#C77E4D	
-Nuln Oil	Shade	#14100E	
-Nuln Oil (Gloss)	Shade	#14100E	
-Reikland Fleshshade	Shade	#CA6C4D	
-Reikland Fleshshade (Gloss)	Shade	#CA6C4D	
-Seraphim Sepia	Shade	#D7824B	
-Astorath Red	Dry	#DD482B	
-Changeling Pink	Dry	#F4AFCD	
-Chronus Blue	Dry	#72A8D1	
-Dawnstone	Dry	#919C9F	
-Eldar Flesh	Dry	#ECC083	
-Etherium Blue	Dry	#A2BAD2	
-Golden Griffon (Metal)	Dry	#A99058	
-Golgfag Brown	Dry	#C2804F	
-Hellion Green	Dry	#84C3AA	
-Hexos Palesun	Dry	#FFF200	
-Hoeth Blue	Dry	#57A9D4	
-Imrik Blue	Dry	#67AED0	
-Kindleflame	Dry	#F79E86	
-Longbeard Grey	Dry	#CECEAF	
-Lucius Lilac	Dry	#B69FCC	
-Necron Compound (Metal)	Dry	#828B8E	
-Niblet Green	Dry	#7DC734	
-Nurgling Green	Dry	#B8CC82	
-Praxeti White	Dry	#FFFFFF	
-Ryza Rust	Dry	#EC631A	
-Sigmarite	Dry	#CAAD76	
-Skink Blue	Dry	#58C1CD	
-Slaanesh Grey	Dry	#DBD5E6	
-Stormfang	Dry	#80A7C1	
-Sylvaneth Bark	Dry	#AC8262	
-Terminatus Stone	Dry	#BDB192	
-Thunderhawk Blue	Dry	#509BA9	
-Tyrant Skull	Dry	#CDC586	
-Underhive Ash	Dry	#C0BD81	
-Verminlord Hide	Dry	#A16954	
-Wrack White	Dry	#FCFBFA	
-Baharroth Blue	Edge	#58C1CD	
-Blue Horror	Edge	#A2BAD2	
-Dechala Lilac	Edge	#B69FCC	
-Dorn Yellow	Edge	#FFF200	
-Fulgrim Pink	Edge	#F4AFCD	
-Gauss Blaster Green	Edge	#84C3AA	
-Krieg Khaki	Edge	#C0BD81	
-Lugganath Orange	Edge	#F79E86	
-Bloodletter	Glaze	#F37355	
-Guilliman Blue	Glaze	#2F9AD6	
-Lamenters Yellow	Glaze	#FFF56B	
-Waywatcher Green	Glaze	#6DC066	
-Agrellan Badland	Texture		
-Agrellan Earth	Texture		
-Armageddon Dust	Texture	#D3A907	
-Armageddon Dunes	Texture		
-Astrogranite	Texture	#757679	
-Astrogranite Debris	Texture		
-Blackfire Earth	Texture	#A75820	
-Lustrian Undergrowth	Texture	#415A09	
-Martian Ironcrust	Texture		
-Martian Ironearth	Texture		
-Mourn Mountain Snow	Texture	#E9EAEB	
-Stirland Battlemire	Texture		
-Stirland Mud	Texture	#492B00	
-Valhallan Blizzard	Texture		
-'Ardcoat	Technical	#E2DEDF	
-Agrellan Earth	Technical	#9A816B	
-Blood for the Blood God	Technical	#67080B	
-Imperial Primer	Technical	#231F20	
-Lahmian Medium	Technical	#F5EDE2	
-Liquid Green Stuff	Technical	#3B7A5F	
-Martian Ironearth	Technical	#C15A4B	
-Nihilakh Oxide	Technical	#6CB79E	
-Nurgle's Rot	Technical	#9B8F22	
-Soulstone Blue	Technical	#004EFA	
-Spiritstone Red	Technical	#FF4B24	
-Typhus Corrosion	Technical	#463D2B	
-Waystone Green	Technical	#00C000*/
+  AbaddonBlack: "#000000",
+  AverlandSunset: "#FDB825",
+  BalthasarGold: "#A47552",
+  BugmansGlow: "#834F44",
+  CaledorSky: "#396E9E",
+  CalibanGreen: "#00401F",
+  CastellanGreen: "#314821",
+  CelestraGrey: "#90A8A8",
+  CeramiteWhite: "#FFFFFF",
+  DaemonetteHide: "#696684",
+  DeathGuardGreen: "#848A66",
+  DeathworldForest: "#5C6730",
+  DryadBark: "#33312D",
+  IncubiDarkness: "#0B474A",
+  JokaeroOrange: "#EE3823",
+  KantorBlue: "#002151",
+  KhorneRed: "#6A0001",
+  Leadbelcher: "#888D8F",
+  MacraggeBlue: "#0D407F",
+  MechanicusStandardGrey: "#3D4B4D",
+  MephistonRed: "#9A1115",
+  MournfangBrown: "#640909",
+  NaggarothNight: "#3D3354",
+  RakarthFlesh: "#A29E91",
+  RatskinFlesh: "#AD6B4C",
+  RetributorArmour: "#C39E81",
+  RhinoxHide: "#493435",
+  ScreamerPink: "#7C1645",
+  ScreamingBell: "#C16F45",
+  SteelLegionDrab: "#5E5134",
+  StegadonScaleGreen: "#074863",
+  TheFangGrey: "#436174",
+  ThousandSonsBlue: "#18ABCC",
+  WaaaghFlesh: "#1F5429",
+  WarplockBronze: "#927D7B",
+  XV88: "#72491E",
+  ZandriDust: "#9E915C",
+  AdministratumGrey: "#949B95",
+  AhrimanBlue: "#1F8C9C",
+  AlaitocBlue: "#295788",
+  AltdorfGuardBlue: "#1F56A7",
+  AuricArmourGold: "#E8BC6D",
+  BalorBrown: "#8B5910",
+  BanebladeBrown: "#937F6D",
+  BestigorFlesh: "#D38A57",
+  BrassScorpion: "#B7885F",
+  CadianFleshtone: "#C77958",
+  CalgarBlue: "#4272B8",
+  DarkReaper: "#3B5150",
+  Dawnstone: "#70756E",
+  DeathclawBrown: "#B36853",
+  DoombullBrown: "#5D0009",
+  ElysianGreen: "#748F39",
+  EmperorsChildren: "#B94278",
+  EshinGrey: "#4A4F52",
+  EvilSunzScarlet: "#C2191F",
+  FenrisianGrey: "#719BB7",
+  FireDragonBright: "#F58652",
+  FlashGitzYellow: "#FFF200",
+  FlayedOneFlesh: "#F0D9B8",
+  FulguriteCopper: "#FCFCDE",
+  GehennasGold: "#DBA674",
+  GenestealerPurple: "#7761AB",
+  GorthorBrown: "#654741",
+  HashutCopper: "#B77647",
+  HoethBlue: "#4C7FB4",
+  Ironbreaker: "#A1A6A9",
+  KabaliteGreen: "#038C67",
+  KarakStone: "#BB9662",
+  KislevFlesh: "#D6A875",
+  LiberatorGold: "#D3B587",
+  LorenForest: "#50702D",
+  LothernBlue: "#34A2CF",
+  MootGreen: "#52B244",
+  NurglingGreen: "#849C63",
+  OgrynCamo: "#9DA94B",
+  PallidWychFlesh: "#CDCEBE",
+  PinkHorror: "#90305D",
+  RunefangSteel: "#C3CACE",
+  RunelordBrass: "#B6A89A",
+  RussGrey: "#547588",
+  ScreamingSkull: "#D2D4A2",
+  SkarsnikGreen: "#5F9370",
+  SkavenblightDinge: "#47413B",
+  SkragBrown: "#90490F",
+  SkullcrusherBrass: "#F1C78E",
+  SlaaneshGrey: "#8E8C97",
+  SotekGreen: "#0B6974",
+  SquigOrange: "#AA4F44",
+  StormhostSilver: "#BBC6C9",
+  StormverminFur: "#736B65",
+  StrakenGreen: "#628126",
+  SybariteGreen: "#30A56C",
+  SycoraxBronze: "#CBB394",
+  TallarnSand: "#A67610",
+  TauLightOchre: "#BF6E1D",
+  TeclisBlue: "#317EC1",
+  TempleGuardBlue: "#339A8D",
+  ThunderhawkBlue: "#417074",
+  TrollSOrange: "#F36D2D",
+  TuskgorFur: "#883636",
+  UlthuanGrey: "#C7E0D9",
+  UngorFlesh: "#D6A766",
+  UshabtiBone: "#BBBB7F",
+  WarbossGreen: "#3E805D",
+  WarpfiendGrey: "#6B6A74",
+  WarpstoneGlow: "#1E7331",
+  WazdakkaRed: "#8C0A0C",
+  WhiteScar: "#FFFFFF",
+  WildRiderRed: "#EA2F28",
+  XereusPurple: "#471F5F",
+  YrielYellow: "#FFDA00",
+  ZamesiDesert: "#DDA026",
+  AgraxEarth: "#5A573F",
+  AgraxEarth: "#5A573F",
+  AthonianCamo: "#6D8E44",
+  BielTanGreen: "#1BA169",
+  CarroburgCrimson: "#A82A70",
+  CasandoraYellow: "#FECE5A",
+  CoeliaGreen: "#0E7F78",
+  DrakenhofNight: "#125899",
+  DruchiiViolet: "#7A468C",
+  FueganOrange: "#C77E4D",
+  NulnOil: "#14100E",
+  NulnOil: "#14100E",
+  ReiklandFlesh: "#CA6C4D",
+  ReiklandFlesh: "#CA6C4D",
+  SeraphimSepia: "#D7824B",
+  AstorathRed: "#DD482B",
+  ChangelingPink: "#F4AFCD",
+  ChronusBlue: "#72A8D1",
+  Dawnstone: "#919C9F",
+  EldarFlesh: "#ECC083",
+  EtheriumBlue: "#A2BAD2",
+  GoldenGriffon: "#A99058",
+  GolgfagBrown: "#C2804F",
+  HellionGreen: "#84C3AA",
+  HexosPalesun: "#FFF200",
+  HoethBlue: "#57A9D4",
+  ImrikBlue: "#67AED0",
+  Kindleflame: "#F79E86",
+  LongbeardGrey: "#CECEAF",
+  LuciusLilac: "#B69FCC",
+  NecronCompound: "#828B8E",
+  NibletGreen: "#7DC734",
+  NurglingGreen: "#B8CC82",
+  PraxetiWhite: "#FFFFFF",
+  RyzaRust: "#EC631A",
+  Sigmarite: "#CAAD76",
+  SkinkBlue: "#58C1CD",
+  SlaaneshGrey: "#DBD5E6",
+  Stormfang: "#80A7C1",
+  SylvanethBark: "#AC8262",
+  TerminatusStone: "#BDB192",
+  ThunderhawkBlue: "#509BA9",
+  TyrantSkull: "#CDC586",
+  UnderhiveAsh: "#C0BD81",
+  VerminlordHide: "#A16954",
+  WrackWhite: "#FCFBFA",
+  BaharrothBlue: "#58C1CD",
+  BlueHorror: "#A2BAD2",
+  DechalaLilac: "#B69FCC",
+  DornYellow: "#FFF200",
+  FulgrimPink: "#F4AFCD",
+  GaussBlasterGreen: "#84C3AA",
+  KriegKhaki: "#C0BD81",
+  LugganathOrange: "#F79E86",
+  Bloodletter: "#F37355",
+  GuillimanBlue: "#2F9AD6",
+  LamentersYellow: "#FFF56B",
+  WaywatcherGreen: "#6DC066",
+  ArmageddonDust: "#D3A907",
+  Astrogranite: "#757679",
+  BlackfireEarth: "#A75820",
+  LustrianUndergrowth: "#415A09",
+  MournMountainSnow: "#E9EAEB",
+  StirlandMud: "#492B00",
+  Ardcoat: "#E2DEDF",
+  AgrellanEarth: "#9A816B",
+  BloodfortheBloodGod: "#67080B",
+  ImperialPrimer: "#231F20",
+  LahmianMedium: "#F5EDE2",
+  LiquidGreenStuff: "#3B7A5F",
+  MartianIronearth: "#C15A4B",
+  NihilakhOxide: "#6CB79E",
+  NurglesRot: "#9B8F22",
+  SoulstoneBlue: "#004EFA",
+  SpiritstoneRed: "#FF4B24",
+  TyphusCorrosion: "#463D2B",
+  WaystoneGreen: "#00C000"
 };
 
 export default citadelPaint;
