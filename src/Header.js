@@ -5,6 +5,7 @@ class Header extends React.Component {
     return (
       <header>
         <h1>Power Armour Studio</h1>
+        <button onClick={this.props.logInButton}>Create</button>
       </header>
     );
   }

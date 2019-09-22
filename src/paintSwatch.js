@@ -1,10 +1,6 @@
 import React from "react";
 
 class PaintSwatch extends React.Component {
-  constructor() {
-    super();
-  }
-
   render() {
     const SwatchStyle = {
       width: 16,

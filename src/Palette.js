@@ -2,7 +2,6 @@ import React from "react";
 
 import SpaceMarine from "./SpaceMarine";
 import PaintSwatch from "./paintSwatch";
-import citadelPaint from "./paintData";
 
 class Palette extends React.Component {
   render() {
@@ -14,11 +13,16 @@ class Palette extends React.Component {
     const colours = [
       this.props.data.base,
       this.props.data.leftPauldren,
+      this.props.data.pauldrenBorder,
       this.props.data.rightPauldren,
       this.props.data.aquila,
       this.props.data.belt
     ];
-    const Swatches = colours.map(colour => <PaintSwatch colour={colour} />);
+
+    const uniqueColours = [...new Set(colours)];
+    const Swatches = uniqueColours.map(colour => (
+      <PaintSwatch colour={colour} />
+    ));
     console.log(colours);
     return (
       <div style={PaletteStyle} class="item">

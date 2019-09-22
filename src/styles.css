@@ -45,3 +45,25 @@ h1 {
   height: 16px;
   background-color: #333;
 }
+
+.editor {
+  display: flex;
+}
+
+.editor__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor__tabs {
+  flex-direction: column;
+}
+
+.editor__swatches {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.editor__swatch {
+  flex-direction: row;
+}
